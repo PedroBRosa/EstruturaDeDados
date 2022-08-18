@@ -10,7 +10,7 @@ public class Main {
         System.out.println("====MATRIZ=====");
         for (int i = 0; i < vet.length; i++) {
             for (int j = 0; j < vet[i].length; j++) {
-                vet[i][j] = random.nextInt(999);
+                vet[i][j] = random.nextInt(0, 999);
                 System.out.printf("%d\t",vet[i][j]);
                 if(minInt>vet[i][j])minInt=vet[i][j];
                 if(maxInt<vet[i][j])maxInt=vet[i][j];
