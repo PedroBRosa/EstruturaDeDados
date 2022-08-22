@@ -14,11 +14,10 @@ public class Main {
                 System.out.printf("%d\t",vet[i][j]);
                 if(minInt>vet[i][j])minInt=vet[i][j];
                 if(maxInt<vet[i][j])maxInt=vet[i][j];
-
             }
-            System.out.printf("\n");
+            System.out.print("\n");
         }
-        System.out.println("===============");
+        System.out.println("===============\n");
         System.out.println("Menor valor presente na Matriz: "+minInt);
         System.out.println("Maior valor presente na Matriz: "+maxInt);
     }
