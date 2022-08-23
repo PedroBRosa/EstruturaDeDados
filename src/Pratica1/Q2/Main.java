@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int minInt=999, maxInt=0;
+        int minInt=Integer.MAX_VALUE, maxInt=Integer.MIN_VALUE;
         int [][] vet =  new int[3][4];
         Random random = new Random();
         System.out.println("====MATRIZ=====");
