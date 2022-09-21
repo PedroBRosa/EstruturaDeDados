@@ -7,10 +7,9 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner;
+        String[] top10 = new String [10];
+        Scanner scanner = new Scanner(new File("c:\\Users/pbrit/OneDrive/Documentos/Tools/frases.txt"));
         Stack stack = new Stack();
-        String top10 [] = new String [10];
-        scanner = new Scanner(new File("c:\\Users/pbrit/OneDrive/Documentos/Tools/frases.txt"));
         while (scanner.hasNextLine()){
             stack.push(scanner.nextLine());
         }
@@ -18,7 +17,7 @@ public class Main {
             top10[i] = (String) stack.pop();
             System.out.println("Top "+(i+1)+" Mais Buscado '"+top10[i]+"'");
         }
-        System.out.printf("\n\n\n===================================\n");
+        System.out.print("\n\n\n===================================\n");
         while (!stack.empty()){
             System.out.println(stack.pop());
         }
